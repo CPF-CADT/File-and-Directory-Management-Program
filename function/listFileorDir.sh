@@ -1,5 +1,5 @@
 #!/bin/bash
-source ./checkFileValidation.sh
+source ./validation.sh
 echo -n "Path of file or directory: "
 read filePath
 if [ -z "$filePath" ];then 

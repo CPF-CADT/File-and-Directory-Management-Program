@@ -7,8 +7,8 @@ while true
 do
     echo "File and Directory Management"
     echo "1 . List File or Directory"
-    echo "2 . Create Backup"
-    echo "3 . Count the number of files in a Directory"
+    echo "2 . Create Backup"        
+    echo "3 . Count the number of files in a Directory" #Jor
     echo "4 . Display disk usage"
     echo "5 . Search "
     echo "6 . Compress "
