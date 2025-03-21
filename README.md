@@ -73,3 +73,6 @@ Clone the GitHub repository to your local machine using the following command:
 
 ```bash
 git clone https://github.com/your-username/bash-file-management-script.git
+
+### 1. setPertmission to *install.sh* file
+chmod install.sh
