@@ -68,11 +68,22 @@ The log file is saved in the same directory where the script is executed.
 
 ## Installation
 
-### 1. Clone the Repository
-Clone the GitHub repository to your local machine using the following command:
+### Code Snippet 1: Clone the Repository
 
-```bash
+<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+<pre>
 git clone https://github.com/your-username/bash-file-management-script.git
+</pre>
+</div>
 
-### 1. setPertmission to *install.sh* file
-chmod install.sh
+---
+
+### Code Snippet 2: Set Permissions to `main.sh` File
+
+<div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
+<pre>
+chmod +x main.shh
+</pre>
+</div>
+
+---
