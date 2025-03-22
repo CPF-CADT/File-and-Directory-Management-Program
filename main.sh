@@ -2,6 +2,8 @@
 user= whoami
 echo "$user"
 
+source ./function/disk_usage.sh
+
 option=0
 while true  
 do
@@ -33,9 +35,9 @@ do
             clear
             echo "Count the number of files in a Directory" 
             ;;
-        4)
-            clear
-            echo "Display disk usage" 
+        4)  
+
+            display_disk_usage
             ;;
         5)
             clear
