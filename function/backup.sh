@@ -1,11 +1,14 @@
 #!/bin/bash
-source "./validation.sh"
 backUpFile() {
     src="$1"
     des="$2"
     cp -p "$src" "$des"
     if [ $? -eq 0 ]; then
-        echo "Backup of file '$src' created at '$des'"
+        echo "Backup successfully"
+        echo
+        echo "Backup of file '$src'"
+        echo "created at '$des'"
+        trackAction "create backup a file $src into $des"
     else
         echo "Error backing up file: $src"
     fi
@@ -15,20 +18,21 @@ backUpDir() {
     des="$2"
     cp -r "$src" "$des"
     if [ $? -eq 0 ]; then
-        echo "Backup of directory '$src' created at '$des'"
+        echo "Backup successfully"
+        echo
+        echo "Backup of directory '$src'"
+        echo "created at '$des'"
+        trackAction "create backup a directory $src into $des"
     else
         echo "Error backing up directory: $src"
     fi
 }
 backup() {
-    echo -n "Source Location: "
-    read sourceItem
+    sourceItem=$(realpath "$1")
+    desItem=$(realpath "$2")
     checkFileValidation "$sourceItem"
-    echo -n "Location to BackUp: "
-    read desItem
-    
-    if [ ! -e "$desItem" ];then
-        mkdir "$desItem"
+    if [ ! -e "$desItem" ]; then
+        mkdir -p "$desItem"
     fi
     checkFileValidation "$desItem"
     if [ -d "$desItem" ]; then
@@ -42,4 +46,4 @@ backup() {
         echo "Error: '$sourceItem' is neither a file nor a directory."
     fi
 }
-backup
+

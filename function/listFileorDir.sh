@@ -1,15 +1,17 @@
 #!/bin/bash
-source ./validation.sh
-echo -n "Path of file or directory: "
-read filePath
-if [ -z "$filePath" ];then 
-    ls -l "."
-    exit 1
-fi
-checkFileValidation filePath
-if [ -d "$filePath" ]; then 
-    ls -l "$filePath"
-elif [ -f "$filePath" ]; then 
-    echo "$filePath is a file:"
-    ls -l "$filePath"
-fi
+listItemInDetail(){
+    filePath=$(realpath "$1")
+    if [ -z "$filePath" ];then 
+        ls -l "."
+        return 1
+    fi
+    checkFileValidation "$filePath"
+    if [ -d "$filePath" ]; then 
+        ls -l "$filePath"
+        trackAction "list information in directory $filePath"
+    elif [ -f "$filePath" ]; then 
+        echo "$filePath is a file:"
+        ls -l "$filePath"
+        trackAction "list information of file $filePath"
+    fi
+}
