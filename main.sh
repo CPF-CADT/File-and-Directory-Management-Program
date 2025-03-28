@@ -13,7 +13,7 @@ source ./function/disk_usage.sh
 
 trackAction "Login into program"  
 option=0
-userFeatureOption=('List File or Directory' 'Create Backup' 'Count the number of files in a Directory' 'Display disk usage' 'Search' 'Compress' )
+userFeatureOption=('List File or Directory' 'Create Backup' 'Count the number of files in a Directory' 'Display disk usage' 'Search' 'Compress' 'Extract File')
 while true
 do
     clear
@@ -84,6 +84,17 @@ do
             read compressContent
             echo "${userFeatureOption[5]}" 
             echo -n "Input compress file    : "
+            read compressFile
+            compress "$compressFile" "$compressContent"
+            stopProcess
+            ;;
+        7)
+            clear
+            trackAction "Navigate to ${userFeatureOption[6]}"  
+            echo -n "Input File : "
+            read compressContent
+            echo "${userFeatureOption[5]}" 
+            echo -n "Extract to : "
             read compressFile
             compress "$compressFile" "$compressContent"
             stopProcess
