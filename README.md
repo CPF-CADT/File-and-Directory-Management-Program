@@ -68,7 +68,7 @@ The log file is saved in the same directory where the script is executed.
 
 ## Installation
 
-### Code Snippet 1: Clone the Repository
+### Step 1: Clone the Repository
 
 <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
 <pre>
@@ -78,7 +78,7 @@ git clone https://github.com/your-username/bash-file-management-script.git
 
 ---
 
-### Code Snippet 2: Set Permissions to `main.sh` File
+### Step 2: Set Permissions to `main.sh` File
 
 <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
 <pre>

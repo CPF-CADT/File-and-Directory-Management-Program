@@ -4,6 +4,7 @@ source "$(dirname "$0")/function/listFileorDir.sh"
 source "$(dirname "$0")/function/backup.sh"
 source "$(dirname "$0")/function/countFileInDir.sh"
 source "$(dirname "$0")/function/compressFileorDir.sh"
+source "$(dirname "$0")/function/disk_usage.sh"
 
 user= whoami
 echo "$user"
@@ -67,6 +68,7 @@ do
             clear
             trackAction "Navigate to ${userFeatureOption[3]}"  
             echo "${userFeatureOption[3]}" 
+            display_disk_usage
             stopProcess
             ;;
         5)
@@ -78,11 +80,11 @@ do
         6)
             clear
             trackAction "Navigate to ${userFeatureOption[5]}"  
+            echo -n "Input compress content : "
+            read compressContent
             echo "${userFeatureOption[5]}" 
             echo -n "Input compress file    : "
             read compressFile
-            echo -n "Input compress content : "
-            read compressContent
             compress "$compressFile" "$compressContent"
             stopProcess
             ;;
