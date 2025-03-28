@@ -24,6 +24,7 @@ do
     echo "4 . ${userFeatureOption[3]}"
     echo "5 . ${userFeatureOption[4]}"
     echo "6 . ${userFeatureOption[5]}"
+    echo "7 . ${userFeatureOption[6]}"
     echo -n "Choose : "
     read option
 
@@ -96,7 +97,7 @@ do
             echo "${userFeatureOption[5]}" 
             echo -n "Extract to : "
             read compressFile
-            compress "$compressFile" "$compressContent"
+            uncompress "$compressFile" "$compressContent"
             stopProcess
             ;;
         *)
