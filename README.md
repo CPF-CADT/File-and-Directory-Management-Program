@@ -1,3 +1,12 @@
+#Opreating System Project
+##Team Member
+-Sat Panha
+-Phy Vathanak
+-Chhun Sivheng
+-Choun Rathanak
+-Lim Lyheang
+
+
 # Bash File Management Script
 
 This script provides a set of powerful tools to manage files and directories from the command line on any Unix-based system (Linux, macOS, or any OS that can run Bash scripts). The program allows users to perform the following tasks:
