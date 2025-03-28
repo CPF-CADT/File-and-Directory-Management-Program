@@ -49,11 +49,17 @@ The program allows you to search for a specific file by its name or extension in
 The script will return a list of all files matching the search criteria.
 
 ### 6. Compress Files or Directories
-You can compress a file or directory into a `.tar.gz` archive. This is useful for creating backups or for transferring large amounts of data. You will specify:
-- The file or directory to compress
-- The location and name of the compressed file
 
-The program will compress the target file/directory into a `.tar.gz` archive at the specified location.
+The `compress` function allows you to compress files or directories into various formats, such as `.zip`, `.tar`, and `.gz`. This can be useful for creating backups, reducing file sizes for storage, or transferring data in a compressed format.
+
+### Function Purpose:
+
+You can use this function to specify:
+
+- **The file or directory to compress.**
+- **The location and name of the compressed output file.**
+
+The program will then compress the target file or directory into the specified archive format (e.g., `.tar.gz`, `.zip`, `.tar`), and store it at the location you provide.
 
 ### 7. Keep a Log of All Actions
 The script maintains a log file, `script.log`, that records all actions performed. Each time the user interacts with the script, the action and the timestamp are appended to this log file. This helps you track what actions have been taken and when they were performed.
