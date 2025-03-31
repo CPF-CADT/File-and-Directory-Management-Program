@@ -100,7 +100,7 @@ git clone https://github.com/your-username/bash-file-management-script.git
 
 <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
 <pre>
-chmod +x main.shh
+chmod +x main.sh
 </pre>
 </div>
 
