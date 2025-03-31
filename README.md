@@ -17,7 +17,8 @@ This script provides a set of powerful tools to manage files and directories fro
 4. Display disk usage of a given directory.
 5. Search for files by name or extension within a directory.
 6. Compress files or directories.
-7. Keep a log file (`script.log`) of all actions performed.
+7. Extract file
+8. Keep a log file (`script.log`) of all actions performed.
 
 The program is interactive and prompts the user to input details for each action. A log file tracks all actions for future reference.
 
@@ -57,7 +58,7 @@ The program allows you to search for a specific file by its name or extension in
 
 The script will return a list of all files matching the search criteria.
 
-### 6. Compress Files or Directories
+### 6. Compress Files or Directories And Extract file
 
 The `compress` function allows you to compress files or directories into various formats, such as `.zip`, `.tar`, and `.gz`. This can be useful for creating backups, reducing file sizes for storage, or transferring data in a compressed format.
 
@@ -67,6 +68,8 @@ You can use this function to specify:
 
 - **The file or directory to compress.**
 - **The location and name of the compressed output file.**
+### Extract (Addtion)
+You can extract file that compressed with support file type  `.zip`, `.tar`, and `.gz` in to a folder.
 
 The program will then compress the target file or directory into the specified archive format (e.g., `.tar.gz`, `.zip`, `.tar`), and store it at the location you provide.
 
