@@ -105,7 +105,7 @@ chmod +x main.sh
 </div>
 
 ---
-### Step 2: Run `main.sh` File
+### Step 3: Run `main.sh` File
 
 <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
 Option 1
@@ -114,6 +114,6 @@ bash main.sh
 </pre>
 Option 2
 <pre>
-./ main.sh 
+./main.sh 
 </pre>
 </div>
