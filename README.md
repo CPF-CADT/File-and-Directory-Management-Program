@@ -90,7 +90,7 @@ The log file is saved in the same directory where the script is executed.
 
 <div style="border: 1px solid #ccc; padding: 10px; background-color: #f9f9f9;">
 <pre>
-git clone https://github.com/your-username/bash-file-management-script.git
+git clone https://github.com/CPF-CADT/File-and-Directory-Management-Program.git
 </pre>
 </div>
 
