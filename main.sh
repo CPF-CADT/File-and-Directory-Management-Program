@@ -5,11 +5,10 @@ source "$(dirname "$0")/function/backup.sh"
 source "$(dirname "$0")/function/countFileInDir.sh"
 source "$(dirname "$0")/function/compressFileorDir.sh"
 source "$(dirname "$0")/function/disk_usage.sh"
+source "$(dirname "$0")/function/searchFile.sh"
 
 user= whoami
 echo "$user"
-
-source ./function/disk_usage.sh
 
 trackAction "Login into program"  
 option=0
@@ -25,6 +24,7 @@ do
     echo "5 . ${userFeatureOption[4]}"
     echo "6 . ${userFeatureOption[5]}"
     echo "7 . ${userFeatureOption[6]}"
+    echo "0 . Exit "
     echo -n "Choose : "
     read option
 
@@ -76,6 +76,11 @@ do
             clear
             trackAction "Navigate to ${userFeatureOption[4]}"  
             echo "${userFeatureOption[4]}" 
+            echo -n "Path of directory: "
+            read dirPath
+            echo -n "Search Item: "
+            read searchItem
+            searchFile "$dirPath" "$searchItem"
             stopProcess
             ;;
         6)
