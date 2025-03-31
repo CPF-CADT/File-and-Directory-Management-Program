@@ -1,10 +1,10 @@
-#Opreating System Project
-##Team Member
--Sat Panha
--Phy Vathanak
--Chhun Sivheng
--Choun Rathanak
--Lim Lyheang
+# Opreating System Project
+## Team Member
+- Sat Panha
+- Phy Vathanak
+- Chhun Sivheng
+- Choun Rathanak
+- Lim Lyheang
 
 
 # Bash File Management Script
