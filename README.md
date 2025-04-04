@@ -47,9 +47,7 @@ It creates a copy of the specified file or directory in to the chosen backup loc
 This feature counts and displays the total number of files in a specified directory. It does not include sub-directories.
 
 ### 4. Display Disk Usage
-The script will show the disk usage (in bytes, kilobytes, megabytes) of a specified directory. It helps you track how much space the directory and its contents are using on the disk.
-
-You will need to enter the directory for which you want to check disk usage. The output will display the total disk space used by the directory and its files.
+The script will show the disk usage (in bytes, kilobytes, megabytes) of a specified directory. It helps you track how much space the partitionn and its contents are using on the disk.
 
 ### 5. Search for a File by Name or Extension
 The program allows you to search for a specific file by its name or extension in a given directory. You will input:
