@@ -9,8 +9,6 @@ source "$(dirname "$0")/function/disk_usage.sh"
 user= whoami
 echo "$user"
 
-source ./function/disk_usage.sh
-
 trackAction "Login into program"  
 option=0
 userFeatureOption=('List File or Directory' 'Create Backup' 'Count the number of files in a Directory' 'Display disk usage' 'Search' 'Compress' 'Extract File')
