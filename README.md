@@ -92,6 +92,9 @@ The log file is saved in the same directory where the script is executed.
 <pre>
 git clone https://github.com/CPF-CADT/File-and-Directory-Management-Program.git
 </pre>
+<pre>
+   cd File-and-Directory-Management-Program/
+</pre>
 </div>
 
 ---
